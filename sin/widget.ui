@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WidgetClass</class>
+ <widget class="QWidget" name="WidgetClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>461</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QPushButton" name="pushButton1">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>260</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>偏移量</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton2">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>260</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>振幅</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton3">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>260</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>周期</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="widget.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton1</sender>
+   <signal>clicked()</signal>
+   <receiver>WidgetClass</receiver>
+   <slot>ChangeSinOffset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>241</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>341</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton2</sender>
+   <signal>clicked()</signal>
+   <receiver>WidgetClass</receiver>
+   <slot>ChangeAmplitude()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>390</x>
+     <y>267</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>391</x>
+     <y>344</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton3</sender>
+   <signal>clicked()</signal>
+   <receiver>WidgetClass</receiver>
+   <slot>ChangeCycle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>574</x>
+     <y>274</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>574</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ChangeSinOffset()</slot>
+  <slot>ChangeAmplitude()</slot>
+  <slot>ChangeCycle()</slot>
+ </slots>
+</ui>
