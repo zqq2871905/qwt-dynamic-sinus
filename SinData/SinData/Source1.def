@@ -1,0 +1,11 @@
+LIBRAR "SinData"
+EXPORTS
+    StartSin @1
+    GetSinData @2
+	SetAmplitude @3
+	SetCycle @4    
+	SetSinOffset @5
+	UpdateSinData @6
+	DrawSin @7
+	RecvData @8
+	
